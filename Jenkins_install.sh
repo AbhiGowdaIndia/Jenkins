@@ -54,7 +54,7 @@ if [[ $osfound == 1 ]]; then
                 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
         echo " ******************************** Enable the jenkins default port 8080 and additional port 50000 ******************"
-        echo " ******************************** After enabling use the bellow URL to go to jenkins ***********************8******"
+        echo " ******************************** After enabling use the bellow URL to go to jenkins *****************************"
         url=$(curl -s https://ifconfig.me)
         echo "http://$url:8080/"
 fi
