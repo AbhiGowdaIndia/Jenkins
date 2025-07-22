@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This will install java and jenkins in any Ubuntu ec2 or RHEL ec2
+# To install dirctly in any Ubuntu / RHEL ec2, run the bellow command
+#	curl -s 'https://raw.githubusercontent.com/AbhiGowdaIndia/Jenkins/refs/heads/main/Jenkins_install.sh' | bash
+
 echo "---------- This will install Jennkins RHEL / Ubuntu based on OS---------------"
 osfound=0
 os=$(awk -F '=' '$1 == "NAME" { gsub(/"/, "", $2); print $2 }' /etc/os-release)
